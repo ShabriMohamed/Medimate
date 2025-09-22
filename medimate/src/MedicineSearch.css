@@ -1,0 +1,58 @@
+/* MedicineSearch.module.css */
+
+.container {
+    margin-top: 50px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .listGroupItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .buttonContainer {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+  }
+  
+  .buttonContainer button {
+    width: fit-content;
+    border-radius: 0.25rem;
+    height: 38px; 
+    margin-left: 10px; 
+  }
+  
+  .buttonContainer button span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .buttonContainer button .spinner {
+    margin-right: 5px; 
+  }
+  
+  @media (max-width: 576px) {
+    
+    .inputGroup {
+      flex-direction: column;
+    }
+  
+    .buttonContainer button {
+      margin-left: 0; 
+      margin-top: 10px; 
+    }
+  }
+  

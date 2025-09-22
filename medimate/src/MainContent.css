@@ -1,0 +1,57 @@
+.main-content {
+  padding: 50px 0;
+}
+
+.text-content, .additional-content {
+  text-align: center;
+  color: #333;
+
+  h2, h3 {
+    color: #1976d2; 
+  }
+
+  p {
+    margin: auto;
+    max-width: 500px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.1rem;
+  }
+
+  .MuiButton-root {
+    margin-top: 20px;
+  }
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+Button Enhancements
+.MuiButton-root {
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+}
+
+.MuiButton-containedPrimary {
+  background-color: #1976d2;
+  &:hover {
+    background-color: #115293;
+  }
+}
+
+.MuiButton-outlinedPrimary {
+  border-color: #1976d2;
+  color: #1976d2;
+  &:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+  }
+}

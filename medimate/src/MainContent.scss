@@ -1,0 +1,103 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Define color palette, fonts, and sizes
+$primary-color: #007bff; // Bright blue
+$accent-color: #ffc107; // Yellow for highlights
+$text-color: #212529; // Dark gray
+$background-color: #eff6e0; // Off-white background
+$font-family-base: 'Roboto', sans-serif;
+
+// Spacing function for consistent margins and paddings
+@function spacing($multiplier) {
+  @return 16px * $multiplier;
+}
+
+// Mixins for common patterns
+@mixin hover-focus {
+  &:hover, &:focus {
+    @content;
+  }
+}
+
+@mixin button-variant($background, $color) {
+  background-color: $background;
+  color: $color;
+  @include hover-focus {
+    background-color: darken($background, 5%);
+    color: lighten($color, 5%);
+  }
+}
+
+// Base styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+// Main content styles
+.main-content {
+  padding: spacing(3);
+
+  .text-content, .additional-content {
+    margin-bottom: spacing(3); // Increased spacing for better visual separation
+
+    h1, h2, h3 {
+      color: $primary-color;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); // Adding text shadow for depth
+    }
+
+    p {
+      margin-bottom: spacing(2);
+      line-height: 1.8; // Increased line height for better readability
+    }
+
+    button {
+      padding: spacing(1.5) spacing(3); // Increased padding for a more substantial feel
+      font-size: 1.2rem; // Slightly larger font size for emphasis
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: spacing(3); // Increased margin for better spacing between elements
+      border-radius: 8px; // Rounded corners for a softer look
+      @include button-variant($primary-color, #fff);
+
+      &:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); // Increased shadow for a lifted effect
+        transform: translateY(-4px) scale(1.05); // Slight upward movement and scale on hover
+      }
+    }
+  }
+
+  .image-content {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px; // Increased border-radius for smoother edges
+      transition: transform 0.3s ease;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); // Enhanced shadow for depth
+
+      @include hover-focus {
+        transform: scale(1.1);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); // Enhanced shadow on hover for depth
+      }
+    }
+  }
+
+  .additional-content {
+    border-top: 3px solid $primary-color; // Thicker border for emphasis
+    padding-top: spacing(4); // Increased padding for better separation from above content
+  }
+}

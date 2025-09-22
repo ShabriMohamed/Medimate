@@ -1,0 +1,54 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 72px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .article {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .article:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image {
+    width: 100%;
+    height: 600px; 
+    object-fit: cover; 
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  

@@ -1,0 +1,40 @@
+.container {
+    padding-top: 20px;
+  
+    .title {
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #333;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      box-shadow: 5px 5px 15px #aaaaaa;
+      border-radius: 15px;
+  
+      &:hover {
+        background: linear-gradient(145deg, #f0f0f0, #ffffff);
+      }
+  
+      .content {
+        font-weight: 600;
+        color: #555;
+  
+        .section {
+          margin-top: 20px;
+          padding: 10px;
+          background: #f9f9f9;
+          border-left: 5px solid #007bff;
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+  
+          .section-title {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+  

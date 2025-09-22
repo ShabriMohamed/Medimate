@@ -1,0 +1,75 @@
+.faq-bot-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.faq-bot-header {
+  display: flex;
+  align-items: center;
+  background: #f0f4f8;
+  padding: 10px 15px;
+}
+
+.bot-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.bot-status {
+  margin-left: 10px;
+}
+
+.bot-name {
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:  20px;
+  padding-left: 70px;
+}
+
+.bot-status-online {
+  display: block;
+  font-size: 12px;
+  color: #4caf50;
+}
+
+.faq-bot {
+  padding: 20px;
+}
+
+.faq-bot h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.faq {
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  cursor: pointer;
+  background-color: #e8f0fe;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #d2e3fc;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

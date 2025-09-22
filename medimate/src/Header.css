@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #bbb;
+    background-color: transparent;
+    backdrop-filter: blur(200px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.Logo {
+    color: rgb(44, 44, 44);
+    font-size: 1.5em;
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.nav ol {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.login-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.5s ease-in-out;
+}
+
+.login-link ion-icon {
+    font-size: 2em;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.login-link:hover {
+    color: #ed174c;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+
+.heading span {
+   color: white; 
+}
+
+.menu2 {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #16a085;
+    cursor: pointer;
+    display: none;
+    z-index: 800;
+}
+
+.btn {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+
+.btn::before {
+    content: '\f0c9';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 2em;
+    display: none;
+}
+
+.nav ol li {
+    margin: 1em;
+}
+
+.nav ol li a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    transition: all 0.4s;
+    position: relative;
+    z-index: 1;
+}
+
+.nav ol li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+    background: #14746f;  /* fallback for old browsers */
+    transform-origin: bottom;
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.nav ol li a:hover::before {
+    transform: scaleY(1.1);
+}
+
+.nav ol li a:hover {
+    color: white;
+}
+
+.nav ol li .active {
+    color: white;
+    background-color: #06d6a0;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 900px) {
+    .btn {
+        display: flex;
+        z-index: 100;
+    }
+
+    .nav {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background: url(assets/Wave.svg);
+        transform: translateY(-110%);
+        transition: all 0.4s;
+        flex-direction: column;
+    }
+
+    input:checked ~ .nav {
+        transform: translateY(0%);
+    }
+
+    input:checked::before {
+        content: '\f00d';
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
+    }
+
+    .menu2 {
+        display: inline-flex;
+        padding-right: 75px;
+    }
+
+    #check:checked~.menu2 #menu-icon {
+        display: none;
+    }
+
+    .menu2 #close-icon {
+        display: none;
+    }
+
+    #check:checked~.menu2 #close-icon {
+        display: block;
+    }
+
+    .nav ol {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .login-link ion-icon {
+        display: none;
+    }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+.logo-text {
+    margin-top: 20px;
+    color: rgb(44, 44, 44);
+    font-size: 1.5em;
+    display: flex;
+}
+
+.logo-text-medi {
+    color: #06d6a0; /* Apply color to Medi */
+}
