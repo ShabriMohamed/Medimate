@@ -1,0 +1,116 @@
+<%- include('layout/header') %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <h1 class="mb-4">Edit Medicine</h1>
+            <!-- Back Button -->
+            <a href="/manage_medicines" class="btn btn-secondary mb-3">Back</a>
+            <!-- Edit Medicine Form -->
+            <form action="/edit/<%= medicine._id %>" method="POST">
+                <div class="form-group">
+                    <label for="medical_name">Medical Name</label>
+                    <input type="text" class="form-control" id="medical_name" name="medical_name" value="<%= medicine.medical_name %>" required>
+                </div>
+                <!-- Description -->
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3" required><%= medicine.description %></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="usage">Usage</label>
+                            <input type="text" class="form-control" id="usage" name="usage" value="<%= medicine.usage %>" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dosage">Dosage</label>
+                            <input type="text" class="form-control" id="dosage" name="dosage" value="<%= medicine.dosage %>" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="side_effects">Side Effects</label>
+                    <textarea class="form-control" id="side_effects" name="side_effects" rows="3" required><%= medicine.side_effects.join(', ') %></textarea>
+                </div>
+                <!-- Alternative Brands Section -->
+                <div class="form-group" id="alternativeBrandsSection">
+                    <label>Alternative Brands</label>
+                    <% medicine.alternative_brands.forEach((brand, index) => { %>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name="alternative_brands_name_<%= index %>" placeholder="Brand Name" value="<%= brand.name %>" required>
+                            <input type="text" class="form-control" name="alternative_brands_link_<%= index %>" placeholder="Brand Link" value="<%= brand.link %>" required>
+                           
+                            <% if(index > 0) { %>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-danger remove-brand-btn" type="button">Remove</button>
+                                </div>
+                            <% } %>
+                        </div>
+                    <% }) %>
+                    <button type="button" class="btn btn-outline-primary mb-3" id="addBrandBtn">Add Brand</button>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary">Update Medicine</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('layout/footer') %>
+
+<style>
+    /* Custom CSS for the edit medicine page */
+    .btn-secondary {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        font-weight: bold;
+    }
+    .form-control {
+        border-radius: 0;
+    }
+    .btn {
+        border-radius: 0;
+    }
+    #alternativeBrandsSection .input-group {
+        margin-bottom: 10px;
+    }
+    #alternativeBrandsSection .input-group-append {
+        display: flex;
+        align-items: center;
+    }
+    #alternativeBrandsSection .remove-brand-btn {
+        margin-left: 10px;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const addBrandBtn = document.getElementById('addBrandBtn');
+        const alternativeBrandsSection = document.getElementById('alternativeBrandsSection');
+
+        addBrandBtn.addEventListener('click', function () {
+            const index = alternativeBrandsSection.querySelectorAll('.input-group').length;
+            const newBrandInputGroup = `
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="alternative_brands_name_${index}" placeholder="Brand Name" required>
+                    <input type="text" class="form-control" name="alternative_brands_link_${index}" placeholder="Brand Link" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-danger remove-brand-btn" type="button">Remove</button>
+                    </div>
+                </div>
+            `;
+            alternativeBrandsSection.insertAdjacentHTML('beforeend', newBrandInputGroup);
+        });
+
+        alternativeBrandsSection.addEventListener('click', function (event) {
+            if (event.target.classList.contains('remove-brand-btn')) {
+                event.target.closest('.input-group').remove();
+            }
+        });
+    });
+</script>

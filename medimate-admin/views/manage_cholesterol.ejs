@@ -1,0 +1,231 @@
+<%- include('layout/header') %>
+<style>
+   
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.data-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.data-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.data-content {
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.section-content {
+    margin-bottom: 12px;
+}
+
+.resource-list {
+    margin-top: 10px;
+}
+
+.resource-heading {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.resource-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.no-data-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-data-section {
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.btn-add {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.delete-form {
+    display: inline;
+    margin-left: 10px;
+}
+
+.edit-form {
+    display: none;
+    margin-top: 10px;
+}
+
+.inline-edit-btn,
+.btn-cancel-edit {
+    margin-top: 10px;
+}
+</style>
+
+<div class="container">
+    <h1 class="heading">Manage Cholesterol Awareness Data</h1>
+    <!-- Back Button -->
+    <button onclick="window.history.back();" class="btn btn-secondary mb-4">Go Back</button>
+
+    <!-- Display existing cholesterol awareness data -->
+    <div class="data-section">
+        <h2 class="section-title">Existing Data</h2>
+        <div class="data-list">
+            <% if (cholesterolData && cholesterolData.length > 0) { %>
+                <% cholesterolData.forEach(data => { %>
+                    <div class="data-item">
+                        <h3 class="data-title"><%= data.title %></h3>
+                        <p class="data-content"><%= data.content %></p>
+                        <!-- Display sections -->
+                        <% if (data.sections && data.sections.length > 0) { %>
+                            <ul class="section-list">
+                                <% data.sections.forEach(section => { %>
+                                    <li>
+                                        <h4 class="section-title"><%= section.title %></h4>
+                                        <p class="section-content"><%= section.content %></p>
+                                    </li>
+                                <% }); %>
+                            </ul>
+                        <% } %>
+                        <!-- Display resources -->
+                        <% if (data.resources && data.resources.length > 0) { %>
+                            <div class="resource-list">
+                                <h4 class="resource-heading">Resources:</h4>
+                                <ul>
+                                    <% data.resources.forEach(resource => { %>
+                                        <li><a href="<%= resource.url %>" class="resource-link"><%= resource.title %></a></li>
+                                    <% }); %>
+                                </ul>
+                            </div>
+                        <% } %>
+                        <!-- Edit and delete buttons -->
+                        <div class="data-actions">
+                            <button class="btn btn-edit inline-edit-btn">Edit</button>
+                            <form action="/manage_cholesterol/delete/<%= data._id %>" method="POST" class="delete-form">
+                                <button type="submit" class="btn btn-delete">Delete</button>
+                            </form>
+                        </div>
+                        <!-- Edit form -->
+                        <form action="/manage_cholesterol/edit/<%= data._id %>" method="POST" class="edit-form" style="display: none;">
+                            <div class="form-group">
+                                <label for="edit-title" class="form-label">Title:</label>
+                                <input type="text" id="edit-title" name="title" class="form-input" value="<%= data.title %>" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="edit-content" class="form-label">Content:</label>
+                                <textarea id="edit-content" name="content" class="form-textarea" rows="4" required><%= data.content %></textarea>
+                            </div>
+                            
+                            
+                            <button type="submit" class="btn btn-edit">Save</button>
+                            <button type="button" class="btn btn-cancel-edit">Cancel</button>
+                        </form>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p class="no-data-message">No cholesterol awareness data found.</p>
+            <% } %>
+        </div>
+    </div>
+
+    <!-- Form to add new data -->
+    <div class="add-data-section">
+        <h2 class="section-title">Add New Data</h2>
+        <form action="/manage_cholesterol/add" method="POST" class="add-data-form">
+            <div class="form-group">
+                <label for="title" class="form-label">Title:</label>
+                <input type="text" id="title" name="title" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="content" class="form-label">Content:</label>
+                <textarea id="content" name="content" class="form-textarea" rows="4" required></textarea>
+            </div>
+            <!-- Add fields for sections and resources if needed -->
+            <button type="submit" class="btn btn-add">Add Data</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.inline-edit-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const dataItem = btn.closest('.data-item');
+            const editForm = dataItem.querySelector('.edit-form');
+            const dataContent = dataItem.querySelector('.data-content');
+            editForm.style.display = 'block';
+            dataContent.style.display = 'none';
+        });
+    });
+
+    document.querySelectorAll('.btn-cancel-edit').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const dataItem = btn.closest('.data-item');
+            const editForm = dataItem.querySelector('.edit-form');
+            const dataContent = dataItem.querySelector('.data-content');
+            editForm.style.display = 'none';
+            dataContent.style.display = 'block';
+        });
+    });
+</script>
+
+<%- include('layout/footer') %>

@@ -1,0 +1,129 @@
+<%- include('layout/header') %>
+
+<style>
+   
+    .table-container {
+        margin-top: 50px;
+    }
+
+    .table-container h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    .table-container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table-container th,
+    .table-container td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .table-container th {
+        background-color: #f2f2f2;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .table-container tbody tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    .table-container .btn {
+        padding: 6px 12px; 
+        font-size: 14px; 
+        margin-right: 5px;
+        width: 120px; 
+    }
+
+    .table-container .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+
+    .table-container .btn-outline-danger {
+        color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .btn-back {
+        margin-right: 10px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="table-container">
+                <h1>Medicines List</h1>
+                <a href="/add" class="btn btn-outline-success btn-add-medicine">Add Medicines</a> 
+                <a href="/" class="btn btn-outline-secondary btn-back">Back</a> 
+                <div class="table-responsive" id="table-container">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Medical Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Usage</th>
+                                <th scope="col">Dosage</th>
+                                <th scope="col">Side Effects</th>
+                                <th scope="col">Alternative Brands</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% medicines.forEach(medicine => { %>
+                                <tr id="<%= medicine._id %>">
+                                    <td><%= medicine.medical_name %></td>
+                                    <td><%= medicine.description %></td>
+                                    <td><%= medicine.usage %></td>
+                                    <td><%= medicine.dosage %></td>
+                                    <td><%= medicine.side_effects.join(', ') %></td>
+                                    <td>
+                                        <% medicine.alternative_brands.forEach(brand => { %>
+                                            <div><%= brand.name %> - <%= brand.link %></div>
+                                        <% }) %>
+                                    </td>
+                                    <td>
+                                        <a href="/edit/<%= medicine._id %>" class="btn btn-outline-primary btn-sm">Edit</a>
+                                        <button class="btn btn-outline-danger btn-sm delete-btn" data-id="<%= medicine._id %>">Delete</button> <!-- Added data-id attribute -->
+                                    </td>
+                                </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', async (event) => {
+            const row = event.target.closest('tr'); 
+            const medicineId = event.target.dataset.id;
+            try {
+                
+                const response = await fetch(`/delete/${medicineId}`, {
+                    method: 'POST'
+                });
+                if (response.ok) {
+                    
+                    row.remove();
+                } else {
+                    console.error('Failed to delete medicine');
+                }
+            } catch (error) {
+                console.error('Error deleting medicine:', error);
+            }
+        });
+    });
+</script>
+
+<%- include('layout/footer') %>

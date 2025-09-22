@@ -1,0 +1,108 @@
+<%- include('layout/header') %>
+
+<style>
+
+    body{
+        background: #1f4037; 
+background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  
+background: linear-gradient(to right, #99f2c8, #1f4037);
+
+    }
+
+    .container_in {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .card {
+        transition: transform 0.3s;
+        border-radius: 10px;
+        width: 200px; 
+        height: 300px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f8f9fa;
+        border: none;
+        margin: 70px; 
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-title, .card-text, .btn {
+        text-align: center;
+    }
+
+    .btn-primary {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    
+    .logout-btn {
+        margin-top: 20px;
+    }
+</style>
+
+
+<div class="container_in">
+    <h1 class="text-center">Welcome to Admin Panel</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-pills fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Manage Medicines</h5>
+                    
+                    <a href="/manage_medicines" class="btn btn-primary">Go to Medicines</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-file-alt fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">Manage Page Content</h5>
+              
+                    <a href="/manage_content" class="btn btn-primary">Go to Content</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-comments fa-3x mb-3 text-primary"></i>
+                    <h5 class="card-title">View User Feedbacks</h5>
+                  
+                    <a href="/feedbacks" class="btn btn-primary">View Feedbacks</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <!-- Logout button at the bottom -->
+    <div class="row justify-content-center logout-btn">
+        <div class="col-md-4">
+            <form action="/logout" method="POST">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('layout/footer') %>

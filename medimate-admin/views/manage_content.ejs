@@ -1,0 +1,145 @@
+<%- include('layout/header') %>
+
+<style>
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container_in {
+    padding: 2rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px; 
+    margin: 0 -15px; 
+    align-items: center;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .fa {
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-image: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+    font-weight: bold;
+    transition: background-image 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(45deg, #2575fc 0%, #6a11cb 100%);
+}
+
+.logout-btn {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 80%;
+    }
+}
+</style>
+
+<div class="container_in">
+    <h1>Welcome to the Awareness Panel</h1>
+    <div class="row">
+        <!-- Cards -->
+        
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-apple-alt fa-3x mb-3"></i>
+                    <h5 class="card-title">Diabetes Awareness</h5>
+                    <p class="card-text">Oversee diabetes awareness initiatives and content.</p>
+                </div>
+                <a href="/manage_diabetes" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-heartbeat fa-3x mb-3"></i>
+                    <h5 class="card-title">Cholesterol Awareness</h5>
+                    <p class="card-text">Manage and update cholesterol health awareness resources.</p>
+                </div>
+                <a href="/manage_cholesterol" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <i class="fas fa-tint fa-3x mb-3"></i>
+                    <h5 class="card-title">Hypertension Awareness</h5>
+                    <p class="card-text">Curate and share hypertension prevention techniques.</p>
+                </div>
+                <a href="/manage_hypertension" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center logout-btn">
+        <button onclick="history.back()" class="btn btn-secondary">Back</button>
+    </div>
+</div>
+
+<%- include('layout/footer') %>

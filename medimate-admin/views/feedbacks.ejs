@@ -1,0 +1,74 @@
+<%- include('layout/header') %>
+
+<style>
+    /* Custom CSS for feedbacks page */
+    .container {
+        padding-top: 50px;
+    }
+
+    .card {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-title {
+        color: #333;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #666;
+    }
+
+    .card-footer {
+        color: #888;
+    }
+
+    .card-footer small {
+        font-size: 0.8rem;
+    }
+    
+    .back-button {
+        display: block;
+        width: 100px;
+        margin: 0 auto 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="container py-5">
+    <button onclick="window.history.back();" class="back-button">Go Back</button>
+    <h1 class="text-center mb-4">User Feedbacks</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <% feedbacks.forEach(feedback => { %>
+            <div class="col">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= feedback.name %></h5>
+                        <!-- Display the email -->
+                        <p class="card-email"><strong>Email:</strong> <%= feedback.email %></p>
+                        <p class="card-text"><%= feedback.message %></p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <small class="text-muted"><%= new Date(feedback.createdAt).toLocaleString() %></small>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include('layout/footer') %>
