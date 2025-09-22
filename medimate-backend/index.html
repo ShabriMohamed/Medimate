@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prediction</title>
+</head>
+<body>
+    <h1>Health Prediction</h1>
+    <form id="symptomsForm">
+        <label for="symptoms">Enter Symptoms (comma-separated):</label><br>
+        <input type="text" id="symptoms" name="symptoms"><br><br>
+        <button type="button" onclick="predict()">Predict</button>
+    </form>
+    <div id="predictionResult"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function predict() {
+            var symptoms = $('#symptoms').val().split(',').map(s => s.trim());
+
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:5001/predict",
+                contentType: "application/json",
+                data: JSON.stringify({ "symptoms": symptoms }),
+                success: function(response) {
+                    $('#predictionResult').text('Prediction: ' + response.prediction);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

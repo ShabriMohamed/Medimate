@@ -1,0 +1,969 @@
+Folder PATH listing for volume Win11 NVME 512GB
+Volume serial number is 180E-100D
+C:.
++---model
++---models
++---node_modules
+¦   +---.bin
+¦   +---@colors
+¦   ¦   +---colors
+¦   ¦       +---examples
+¦   ¦       +---lib
+¦   ¦       ¦   +---custom
+¦   ¦       ¦   +---maps
+¦   ¦       ¦   +---system
+¦   ¦       +---themes
+¦   +---@dabh
+¦   ¦   +---diagnostics
+¦   ¦       +---adapters
+¦   ¦       +---browser
+¦   ¦       +---logger
+¦   ¦       +---modifiers
+¦   ¦       +---node
+¦   +---@mapbox
+¦   ¦   +---node-pre-gyp
+¦   ¦       +---bin
+¦   ¦       +---lib
+¦   ¦       ¦   +---util
+¦   ¦       ¦       +---nw-pre-gyp
+¦   ¦       +---node_modules
+¦   ¦           +---.bin
+¦   ¦           +---agent-base
+¦   ¦           ¦   +---dist
+¦   ¦           ¦   ¦   +---src
+¦   ¦           ¦   +---src
+¦   ¦           +---chownr
+¦   ¦           +---debug
+¦   ¦           ¦   +---src
+¦   ¦           +---fs-minipass
+¦   ¦           ¦   +---node_modules
+¦   ¦           ¦       +---minipass
+¦   ¦           +---https-proxy-agent
+¦   ¦           ¦   +---dist
+¦   ¦           +---minipass
+¦   ¦           +---minizlib
+¦   ¦           ¦   +---node_modules
+¦   ¦           ¦       +---minipass
+¦   ¦           +---mkdirp
+¦   ¦           ¦   +---bin
+¦   ¦           ¦   +---lib
+¦   ¦           +---ms
+¦   ¦           +---rimraf
+¦   ¦           +---tar
+¦   ¦               +---lib
+¦   +---@mongodb-js
+¦   ¦   +---saslprep
+¦   ¦       +---dist
+¦   +---@tensorflow
+¦   ¦   +---tfjs
+¦   ¦   ¦   +---.rollup.cache
+¦   ¦   ¦   ¦   +---tmp
+¦   ¦   ¦   ¦       +---tfjs-publish
+¦   ¦   ¦   ¦           +---tfjs
+¦   ¦   ¦   ¦               +---dist
+¦   ¦   ¦   +---dist
+¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦   ¦   ¦   +---tools
+¦   ¦   ¦   ¦       +---custom_module
+¦   ¦   ¦   +---src
+¦   ¦   ¦   +---tools
+¦   ¦   ¦       +---custom_module
+¦   ¦   +---tfjs-backend-cpu
+¦   ¦   ¦   +---dist
+¦   ¦   ¦       +---kernels
+¦   ¦   ¦       +---utils
+¦   ¦   +---tfjs-backend-webgl
+¦   ¦   ¦   +---dist
+¦   ¦   ¦       +---kernels
+¦   ¦   ¦       ¦   +---FromPixels_utils
+¦   ¦   ¦       +---kernel_utils
+¦   ¦   ¦       +---miniprogram
+¦   ¦   +---tfjs-converter
+¦   ¦   ¦   +---dist
+¦   ¦   ¦   ¦   +---data
+¦   ¦   ¦   ¦   +---executor
+¦   ¦   ¦   ¦   ¦   +---test_data
+¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦   ¦   ¦   +---operations
+¦   ¦   ¦   ¦       +---custom_op
+¦   ¦   ¦   ¦       +---executors
+¦   ¦   ¦   ¦       +---op_list
+¦   ¦   ¦   +---metadata
+¦   ¦   +---tfjs-core
+¦   ¦   ¦   +---dist
+¦   ¦   ¦   ¦   +---backends
+¦   ¦   ¦   ¦   +---gradients
+¦   ¦   ¦   ¦   +---io
+¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦   ¦   ¦   +---ops
+¦   ¦   ¦   ¦   ¦   +---fused
+¦   ¦   ¦   ¦   ¦   +---image
+¦   ¦   ¦   ¦   ¦   +---linalg
+¦   ¦   ¦   ¦   ¦   +---losses
+¦   ¦   ¦   ¦   ¦   +---signal
+¦   ¦   ¦   ¦   ¦   +---sparse
+¦   ¦   ¦   ¦   ¦   +---spectral
+¦   ¦   ¦   ¦   ¦   +---string
+¦   ¦   ¦   ¦   +---optimizers
+¦   ¦   ¦   ¦   +---platforms
+¦   ¦   ¦   ¦   +---public
+¦   ¦   ¦   ¦   ¦   +---chained_ops
+¦   ¦   ¦   ¦   +---scripts
+¦   ¦   ¦   ¦       +---test_snippets
+¦   ¦   ¦   +---node_modules
+¦   ¦   ¦       +---@types
+¦   ¦   ¦           +---offscreencanvas
+¦   ¦   +---tfjs-data
+¦   ¦   ¦   +---dist
+¦   ¦   ¦   ¦   +---datasets
+¦   ¦   ¦   ¦   +---iterators
+¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦   ¦   ¦   +---sources
+¦   ¦   ¦   ¦   +---util
+¦   ¦   ¦   +---node_modules
+¦   ¦   ¦       +---string_decoder
+¦   ¦   ¦           +---lib
+¦   ¦   +---tfjs-layers
+¦   ¦   ¦   +---dist
+¦   ¦   ¦       +---backend
+¦   ¦   ¦       +---engine
+¦   ¦   ¦       +---keras_format
+¦   ¦   ¦       ¦   +---layers
+¦   ¦   ¦       +---layers
+¦   ¦   ¦       ¦   +---nlp
+¦   ¦   ¦       ¦   ¦   +---modeling
+¦   ¦   ¦       ¦   ¦   +---models
+¦   ¦   ¦       ¦   ¦   ¦   +---gpt2
+¦   ¦   ¦       ¦   ¦   +---preprocessing
+¦   ¦   ¦       ¦   +---preprocessing
+¦   ¦   ¦       +---miniprogram
+¦   ¦   ¦       +---utils
+¦   ¦   +---tfjs-node
+¦   ¦       +---binding
+¦   ¦       +---deps
+¦   ¦       ¦   +---include
+¦   ¦       ¦   ¦   +---tensorflow
+¦   ¦       ¦   ¦       +---c
+¦   ¦       ¦   ¦       ¦   +---eager
+¦   ¦       ¦   ¦       +---core
+¦   ¦       ¦   ¦           +---platform
+¦   ¦       ¦   +---lib
+¦   ¦       +---dist
+¦   ¦       ¦   +---io
+¦   ¦       ¦   +---kernels
+¦   ¦       ¦   +---proto
+¦   ¦       +---lib
+¦   ¦       ¦   +---napi-v8
+¦   ¦       +---node_modules
+¦   ¦       ¦   +---.bin
+¦   ¦       ¦   +---@tensorflow
+¦   ¦       ¦   ¦   +---tfjs
+¦   ¦       ¦   ¦   ¦   +---dist
+¦   ¦       ¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦       ¦   ¦   ¦   ¦   +---tools
+¦   ¦       ¦   ¦   ¦   ¦       +---custom_module
+¦   ¦       ¦   ¦   ¦   +---src
+¦   ¦       ¦   ¦   ¦   +---tools
+¦   ¦       ¦   ¦   ¦       +---custom_module
+¦   ¦       ¦   ¦   +---tfjs-backend-cpu
+¦   ¦       ¦   ¦   ¦   +---dist
+¦   ¦       ¦   ¦   ¦   ¦   +---kernels
+¦   ¦       ¦   ¦   ¦   ¦   +---utils
+¦   ¦       ¦   ¦   ¦   +---node_modules
+¦   ¦       ¦   ¦   ¦       +---seedrandom
+¦   ¦       ¦   ¦   ¦           +---lib
+¦   ¦       ¦   ¦   ¦           +---test
+¦   ¦       ¦   ¦   ¦               +---lib
+¦   ¦       ¦   ¦   ¦               +---out
+¦   ¦       ¦   ¦   +---tfjs-backend-webgl
+¦   ¦       ¦   ¦   ¦   +---dist
+¦   ¦       ¦   ¦   ¦   ¦   +---kernels
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---FromPixels_utils
+¦   ¦       ¦   ¦   ¦   ¦   +---kernel_utils
+¦   ¦       ¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦       ¦   ¦   ¦   +---node_modules
+¦   ¦       ¦   ¦   ¦       +---seedrandom
+¦   ¦       ¦   ¦   ¦           +---lib
+¦   ¦       ¦   ¦   ¦           +---test
+¦   ¦       ¦   ¦   ¦               +---lib
+¦   ¦       ¦   ¦   ¦               +---out
+¦   ¦       ¦   ¦   +---tfjs-converter
+¦   ¦       ¦   ¦   ¦   +---dist
+¦   ¦       ¦   ¦   ¦   ¦   +---data
+¦   ¦       ¦   ¦   ¦   ¦   +---executor
+¦   ¦       ¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦       ¦   ¦   ¦   ¦   +---operations
+¦   ¦       ¦   ¦   ¦   ¦       +---custom_op
+¦   ¦       ¦   ¦   ¦   ¦       +---executors
+¦   ¦       ¦   ¦   ¦   ¦       +---op_list
+¦   ¦       ¦   ¦   ¦   +---metadata
+¦   ¦       ¦   ¦   +---tfjs-core
+¦   ¦       ¦   ¦   ¦   +---dist
+¦   ¦       ¦   ¦   ¦   ¦   +---backends
+¦   ¦       ¦   ¦   ¦   ¦   +---gradients
+¦   ¦       ¦   ¦   ¦   ¦   +---io
+¦   ¦       ¦   ¦   ¦   ¦   +---miniprogram
+¦   ¦       ¦   ¦   ¦   ¦   +---ops
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---fused
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---image
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---linalg
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---losses
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---signal
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---sparse
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---spectral
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---string
+¦   ¦       ¦   ¦   ¦   ¦   +---optimizers
+¦   ¦       ¦   ¦   ¦   ¦   +---platforms
+¦   ¦       ¦   ¦   ¦   ¦   +---public
+¦   ¦       ¦   ¦   ¦   ¦   ¦   +---chained_ops
+¦   ¦       ¦   ¦   ¦   ¦   +---scripts
+¦   ¦       ¦   ¦   ¦   ¦       +---test_snippets
+¦   ¦       ¦   ¦   ¦   +---node_modules
+¦   ¦       ¦   ¦   ¦       +---seedrandom
+¦   ¦       ¦   ¦   ¦           +---lib
+¦   ¦       ¦   ¦   ¦           +---test
+¦   ¦       ¦   ¦   ¦               +---lib
+¦   ¦       ¦   ¦   ¦               +---out
+¦   ¦       ¦   ¦   +---tfjs-data
+¦   ¦       ¦   ¦   ¦   +---dist
+¦   ¦       ¦   ¦   ¦       +---datasets
+¦   ¦       ¦   ¦   ¦       +---iterators
+¦   ¦       ¦   ¦   ¦       +---miniprogram
+¦   ¦       ¦   ¦   ¦       +---sources
+¦   ¦       ¦   ¦   ¦       +---util
+¦   ¦       ¦   ¦   +---tfjs-layers
+¦   ¦       ¦   ¦       +---dist
+¦   ¦       ¦   ¦           +---backend
+¦   ¦       ¦   ¦           +---engine
+¦   ¦       ¦   ¦           +---keras_format
+¦   ¦       ¦   ¦           ¦   +---layers
+¦   ¦       ¦   ¦           +---layers
+¦   ¦       ¦   ¦           +---miniprogram
+¦   ¦       ¦   ¦           +---utils
+¦   ¦       ¦   +---@types
+¦   ¦       ¦   ¦   +---seedrandom
+¦   ¦       ¦   +---seedrandom
+¦   ¦       ¦       +---lib
+¦   ¦       ¦       +---test
+¦   ¦       ¦           +---lib
+¦   ¦       ¦           +---out
+¦   ¦       +---python
+¦   ¦       +---scripts
+¦   ¦       +---src
+¦   ¦           +---io
+¦   ¦           +---kernels
+¦   ¦           +---proto
+¦   +---@types
+¦   ¦   +---long
+¦   ¦   +---node
+¦   ¦   ¦   +---assert
+¦   ¦   ¦   +---dns
+¦   ¦   ¦   +---fs
+¦   ¦   ¦   +---readline
+¦   ¦   ¦   +---stream
+¦   ¦   ¦   +---timers
+¦   ¦   ¦   +---ts4.8
+¦   ¦   ¦       +---assert
+¦   ¦   ¦       +---dns
+¦   ¦   ¦       +---fs
+¦   ¦   ¦       +---readline
+¦   ¦   ¦       +---stream
+¦   ¦   ¦       +---timers
+¦   ¦   +---node-fetch
+¦   ¦   +---offscreencanvas
+¦   ¦   +---seedrandom
+¦   ¦   +---triple-beam
+¦   ¦   +---webgl-ext
+¦   ¦   +---webgl2
+¦   ¦   +---webidl-conversions
+¦   ¦   +---whatwg-url
+¦   ¦       +---lib
+¦   +---@webgpu
+¦   ¦   +---types
+¦   ¦       +---dist
+¦   +---abbrev
+¦   +---accepts
+¦   +---adm-zip
+¦   ¦   +---headers
+¦   ¦   +---methods
+¦   ¦   +---util
+¦   +---agent-base
+¦   ¦   +---test
+¦   +---ansi-regex
+¦   +---ansi-styles
+¦   ¦   +---node_modules
+¦   ¦       +---color-convert
+¦   ¦       +---color-name
+¦   +---append-field
+¦   ¦   +---lib
+¦   ¦   +---test
+¦   +---aproba
+¦   +---are-we-there-yet
+¦   +---argparse
+¦   ¦   +---lib
+¦   ¦       +---action
+¦   ¦       ¦   +---append
+¦   ¦       ¦   +---store
+¦   ¦       +---argument
+¦   ¦       +---help
+¦   +---array-flatten
+¦   +---async
+¦   ¦   +---dist
+¦   ¦   +---internal
+¦   +---asynckit
+¦   ¦   +---lib
+¦   +---axios
+¦   ¦   +---dist
+¦   ¦   ¦   +---browser
+¦   ¦   ¦   +---esm
+¦   ¦   ¦   +---node
+¦   ¦   +---lib
+¦   ¦       +---adapters
+¦   ¦       +---cancel
+¦   ¦       +---core
+¦   ¦       +---defaults
+¦   ¦       +---env
+¦   ¦       ¦   +---classes
+¦   ¦       +---helpers
+¦   ¦       +---platform
+¦   ¦           +---browser
+¦   ¦           ¦   +---classes
+¦   ¦           +---common
+¦   ¦           +---node
+¦   ¦               +---classes
+¦   +---balanced-match
+¦   ¦   +---.github
+¦   +---body-parser
+¦   ¦   +---lib
+¦   ¦       +---types
+¦   +---brace-expansion
+¦   +---bson
+¦   ¦   +---etc
+¦   ¦   +---lib
+¦   ¦   +---src
+¦   ¦   ¦   +---parser
+¦   ¦   ¦   +---utils
+¦   ¦   +---vendor
+¦   ¦       +---base64
+¦   ¦       +---text-encoding
+¦   ¦           +---lib
+¦   +---buffer-from
+¦   +---busboy
+¦   ¦   +---.github
+¦   ¦   ¦   +---workflows
+¦   ¦   +---bench
+¦   ¦   +---lib
+¦   ¦   ¦   +---types
+¦   ¦   +---test
+¦   +---bytes
+¦   +---call-bind
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---chalk
+¦   ¦   +---source
+¦   +---chownr
+¦   +---cliui
+¦   ¦   +---build
+¦   ¦       +---lib
+¦   +---code-point-at
+¦   +---color
+¦   +---color-convert
+¦   +---color-name
+¦   +---color-string
+¦   +---colorspace
+¦   +---combined-stream
+¦   ¦   +---lib
+¦   +---concat-map
+¦   ¦   +---example
+¦   ¦   +---test
+¦   +---concat-stream
+¦   +---console-control-strings
+¦   +---content-disposition
+¦   +---content-type
+¦   +---cookie
+¦   +---cookie-signature
+¦   +---core-js
+¦   ¦   +---actual
+¦   ¦   ¦   +---array
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---array-buffer
+¦   ¦   ¦   +---async-iterator
+¦   ¦   ¦   +---data-view
+¦   ¦   ¦   +---date
+¦   ¦   ¦   +---disposable-stack
+¦   ¦   ¦   +---dom-collections
+¦   ¦   ¦   +---dom-exception
+¦   ¦   ¦   +---error
+¦   ¦   ¦   +---function
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---instance
+¦   ¦   ¦   +---iterator
+¦   ¦   ¦   +---json
+¦   ¦   ¦   +---map
+¦   ¦   ¦   +---math
+¦   ¦   ¦   +---number
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---object
+¦   ¦   ¦   +---promise
+¦   ¦   ¦   +---reflect
+¦   ¦   ¦   +---regexp
+¦   ¦   ¦   +---set
+¦   ¦   ¦   +---string
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---symbol
+¦   ¦   ¦   +---typed-array
+¦   ¦   ¦   +---url
+¦   ¦   ¦   +---url-search-params
+¦   ¦   ¦   +---weak-map
+¦   ¦   ¦   +---weak-set
+¦   ¦   +---es
+¦   ¦   ¦   +---array
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---array-buffer
+¦   ¦   ¦   +---data-view
+¦   ¦   ¦   +---date
+¦   ¦   ¦   +---error
+¦   ¦   ¦   +---function
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---instance
+¦   ¦   ¦   +---json
+¦   ¦   ¦   +---map
+¦   ¦   ¦   +---math
+¦   ¦   ¦   +---number
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---object
+¦   ¦   ¦   +---promise
+¦   ¦   ¦   +---reflect
+¦   ¦   ¦   +---regexp
+¦   ¦   ¦   +---set
+¦   ¦   ¦   +---string
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---symbol
+¦   ¦   ¦   +---typed-array
+¦   ¦   ¦   +---weak-map
+¦   ¦   ¦   +---weak-set
+¦   ¦   +---features
+¦   ¦   ¦   +---array
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---array-buffer
+¦   ¦   ¦   +---async-disposable-stack
+¦   ¦   ¦   +---async-iterator
+¦   ¦   ¦   +---bigint
+¦   ¦   ¦   +---data-view
+¦   ¦   ¦   +---date
+¦   ¦   ¦   +---disposable-stack
+¦   ¦   ¦   +---dom-collections
+¦   ¦   ¦   +---dom-exception
+¦   ¦   ¦   +---error
+¦   ¦   ¦   +---function
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---instance
+¦   ¦   ¦   +---iterator
+¦   ¦   ¦   +---json
+¦   ¦   ¦   +---map
+¦   ¦   ¦   +---math
+¦   ¦   ¦   +---number
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---object
+¦   ¦   ¦   +---observable
+¦   ¦   ¦   +---promise
+¦   ¦   ¦   +---reflect
+¦   ¦   ¦   +---regexp
+¦   ¦   ¦   +---set
+¦   ¦   ¦   +---string
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---symbol
+¦   ¦   ¦   +---typed-array
+¦   ¦   ¦   +---url
+¦   ¦   ¦   +---url-search-params
+¦   ¦   ¦   +---weak-map
+¦   ¦   ¦   +---weak-set
+¦   ¦   +---full
+¦   ¦   ¦   +---array
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---array-buffer
+¦   ¦   ¦   +---async-disposable-stack
+¦   ¦   ¦   +---async-iterator
+¦   ¦   ¦   +---bigint
+¦   ¦   ¦   +---data-view
+¦   ¦   ¦   +---date
+¦   ¦   ¦   +---disposable-stack
+¦   ¦   ¦   +---dom-collections
+¦   ¦   ¦   +---dom-exception
+¦   ¦   ¦   +---error
+¦   ¦   ¦   +---function
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---instance
+¦   ¦   ¦   +---iterator
+¦   ¦   ¦   +---json
+¦   ¦   ¦   +---map
+¦   ¦   ¦   +---math
+¦   ¦   ¦   +---number
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---object
+¦   ¦   ¦   +---observable
+¦   ¦   ¦   +---promise
+¦   ¦   ¦   +---reflect
+¦   ¦   ¦   +---regexp
+¦   ¦   ¦   +---set
+¦   ¦   ¦   +---string
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---symbol
+¦   ¦   ¦   +---typed-array
+¦   ¦   ¦   +---url
+¦   ¦   ¦   +---url-search-params
+¦   ¦   ¦   +---weak-map
+¦   ¦   ¦   +---weak-set
+¦   ¦   +---internals
+¦   ¦   +---modules
+¦   ¦   +---proposals
+¦   ¦   +---stable
+¦   ¦   ¦   +---array
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---array-buffer
+¦   ¦   ¦   +---data-view
+¦   ¦   ¦   +---date
+¦   ¦   ¦   +---dom-collections
+¦   ¦   ¦   +---dom-exception
+¦   ¦   ¦   +---error
+¦   ¦   ¦   +---function
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---instance
+¦   ¦   ¦   +---json
+¦   ¦   ¦   +---map
+¦   ¦   ¦   +---math
+¦   ¦   ¦   +---number
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---object
+¦   ¦   ¦   +---promise
+¦   ¦   ¦   +---reflect
+¦   ¦   ¦   +---regexp
+¦   ¦   ¦   +---set
+¦   ¦   ¦   +---string
+¦   ¦   ¦   ¦   +---virtual
+¦   ¦   ¦   +---symbol
+¦   ¦   ¦   +---typed-array
+¦   ¦   ¦   +---url
+¦   ¦   ¦   +---url-search-params
+¦   ¦   ¦   +---weak-map
+¦   ¦   ¦   +---weak-set
+¦   ¦   +---stage
+¦   ¦   +---web
+¦   +---core-util-is
+¦   ¦   +---lib
+¦   +---cors
+¦   ¦   +---lib
+¦   +---debug
+¦   ¦   +---src
+¦   +---define-data-property
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---delayed-stream
+¦   ¦   +---lib
+¦   +---delegates
+¦   ¦   +---test
+¦   +---depd
+¦   ¦   +---lib
+¦   ¦       +---browser
+¦   +---destroy
+¦   +---detect-libc
+¦   ¦   +---bin
+¦   ¦   +---lib
+¦   +---dotenv
+¦   ¦   +---lib
+¦   +---ee-first
+¦   +---emoji-regex
+¦   ¦   +---es2015
+¦   +---enabled
+¦   +---encodeurl
+¦   +---es-define-property
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---es-errors
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---es6-promise
+¦   ¦   +---dist
+¦   ¦   +---lib
+¦   ¦       +---es6-promise
+¦   ¦           +---promise
+¦   +---es6-promisify
+¦   ¦   +---dist
+¦   +---escalade
+¦   ¦   +---dist
+¦   ¦   +---sync
+¦   +---escape-html
+¦   +---etag
+¦   +---express
+¦   ¦   +---lib
+¦   ¦       +---middleware
+¦   ¦       +---router
+¦   +---fecha
+¦   ¦   +---dist
+¦   ¦   +---lib
+¦   ¦   +---src
+¦   +---finalhandler
+¦   +---fn.name
+¦   +---follow-redirects
+¦   +---form-data
+¦   ¦   +---lib
+¦   +---forwarded
+¦   +---fresh
+¦   +---fs-minipass
+¦   +---fs.realpath
+¦   +---function-bind
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---gauge
+¦   ¦   +---node_modules
+¦   ¦       +---ansi-regex
+¦   ¦       +---is-fullwidth-code-point
+¦   ¦       +---string-width
+¦   ¦       +---strip-ansi
+¦   +---get-caller-file
+¦   +---get-intrinsic
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---glob
+¦   +---google-protobuf
+¦   ¦   +---google
+¦   ¦       +---protobuf
+¦   ¦           +---compiler
+¦   +---gopd
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---has-flag
+¦   +---has-property-descriptors
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---has-proto
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---has-symbols
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   ¦       +---shams
+¦   +---has-unicode
+¦   +---hasown
+¦   ¦   +---.github
+¦   +---http-errors
+¦   +---https-proxy-agent
+¦   ¦   +---node_modules
+¦   ¦       +---debug
+¦   ¦       ¦   +---src
+¦   ¦       +---ms
+¦   +---iconv-lite
+¦   ¦   +---encodings
+¦   ¦   ¦   +---tables
+¦   ¦   +---lib
+¦   +---inflight
+¦   +---inherits
+¦   +---ipaddr.js
+¦   ¦   +---lib
+¦   +---is-arrayish
+¦   +---is-fullwidth-code-point
+¦   +---is-stream
+¦   +---isarray
+¦   +---kareem
+¦   +---kuler
+¦   +---logform
+¦   ¦   +---dist
+¦   ¦   +---examples
+¦   ¦   +---node_modules
+¦   ¦       +---ms
+¦   +---long
+¦   ¦   +---dist
+¦   ¦   +---src
+¦   +---lru-cache
+¦   +---make-dir
+¦   ¦   +---node_modules
+¦   ¦       +---.bin
+¦   ¦       +---semver
+¦   ¦           +---bin
+¦   +---media-typer
+¦   +---memory-pager
+¦   +---merge-descriptors
+¦   +---methods
+¦   +---mime
+¦   ¦   +---src
+¦   +---mime-db
+¦   +---mime-types
+¦   +---minimatch
+¦   +---minimist
+¦   ¦   +---.github
+¦   ¦   +---example
+¦   ¦   +---test
+¦   +---minipass
+¦   ¦   +---node_modules
+¦   ¦       +---yallist
+¦   +---minizlib
+¦   +---mkdirp
+¦   ¦   +---bin
+¦   +---mongodb
+¦   ¦   +---etc
+¦   ¦   +---lib
+¦   ¦   ¦   +---bulk
+¦   ¦   ¦   +---client-side-encryption
+¦   ¦   ¦   ¦   +---providers
+¦   ¦   ¦   +---cmap
+¦   ¦   ¦   ¦   +---auth
+¦   ¦   ¦   ¦   ¦   +---mongodb_oidc
+¦   ¦   ¦   ¦   +---handshake
+¦   ¦   ¦   ¦   +---wire_protocol
+¦   ¦   ¦   +---cursor
+¦   ¦   ¦   +---gridfs
+¦   ¦   ¦   +---operations
+¦   ¦   ¦   ¦   +---search_indexes
+¦   ¦   ¦   +---sdam
+¦   ¦   +---src
+¦   ¦       +---bulk
+¦   ¦       +---client-side-encryption
+¦   ¦       ¦   +---providers
+¦   ¦       +---cmap
+¦   ¦       ¦   +---auth
+¦   ¦       ¦   ¦   +---mongodb_oidc
+¦   ¦       ¦   +---handshake
+¦   ¦       ¦   +---wire_protocol
+¦   ¦       +---cursor
+¦   ¦       +---gridfs
+¦   ¦       +---operations
+¦   ¦       ¦   +---search_indexes
+¦   ¦       +---sdam
+¦   +---mongodb-connection-string-url
+¦   ¦   +---lib
+¦   +---mongoose
+¦   ¦   +---dist
+¦   ¦   +---lib
+¦   ¦   ¦   +---cast
+¦   ¦   ¦   +---cursor
+¦   ¦   ¦   +---drivers
+¦   ¦   ¦   ¦   +---browser
+¦   ¦   ¦   ¦   +---node-mongodb-native
+¦   ¦   ¦   +---error
+¦   ¦   ¦   +---helpers
+¦   ¦   ¦   ¦   +---aggregate
+¦   ¦   ¦   ¦   +---cursor
+¦   ¦   ¦   ¦   +---discriminator
+¦   ¦   ¦   ¦   +---document
+¦   ¦   ¦   ¦   +---error
+¦   ¦   ¦   ¦   +---indexes
+¦   ¦   ¦   ¦   +---model
+¦   ¦   ¦   ¦   +---path
+¦   ¦   ¦   ¦   +---populate
+¦   ¦   ¦   ¦   +---projection
+¦   ¦   ¦   ¦   +---query
+¦   ¦   ¦   ¦   +---schema
+¦   ¦   ¦   ¦   +---schematype
+¦   ¦   ¦   ¦   +---timestamps
+¦   ¦   ¦   ¦   +---topology
+¦   ¦   ¦   ¦   +---update
+¦   ¦   ¦   +---options
+¦   ¦   ¦   +---plugins
+¦   ¦   ¦   +---schema
+¦   ¦   ¦   ¦   +---operators
+¦   ¦   ¦   +---types
+¦   ¦   ¦       +---array
+¦   ¦   ¦       ¦   +---methods
+¦   ¦   ¦       +---documentArray
+¦   ¦   ¦           +---methods
+¦   ¦   +---node_modules
+¦   ¦   ¦   +---ms
+¦   ¦   +---types
+¦   +---mpath
+¦   ¦   +---lib
+¦   ¦   +---test
+¦   +---mquery
+¦   ¦   +---.github
+¦   ¦   +---lib
+¦   ¦   ¦   +---collection
+¦   ¦   +---node_modules
+¦   ¦       +---debug
+¦   ¦       ¦   +---src
+¦   ¦       +---ms
+¦   +---ms
+¦   +---multer
+¦   ¦   +---lib
+¦   ¦   +---storage
+¦   +---negotiator
+¦   ¦   +---lib
+¦   +---node-fetch
+¦   ¦   +---lib
+¦   ¦   +---node_modules
+¦   ¦       +---tr46
+¦   ¦       ¦   +---lib
+¦   ¦       +---webidl-conversions
+¦   ¦       ¦   +---lib
+¦   ¦       +---whatwg-url
+¦   ¦           +---lib
+¦   +---nopt
+¦   ¦   +---bin
+¦   ¦   +---lib
+¦   +---npmlog
+¦   +---number-is-nan
+¦   +---object-assign
+¦   +---object-inspect
+¦   ¦   +---.github
+¦   ¦   +---example
+¦   ¦   +---test
+¦   ¦       +---browser
+¦   +---on-finished
+¦   +---once
+¦   +---one-time
+¦   +---parseurl
+¦   +---path-is-absolute
+¦   +---path-to-regexp
+¦   +---process-nextick-args
+¦   +---progress
+¦   ¦   +---lib
+¦   +---proxy-addr
+¦   +---proxy-from-env
+¦   +---punycode
+¦   +---python-shell
+¦   +---qs
+¦   ¦   +---.github
+¦   ¦   +---dist
+¦   ¦   +---lib
+¦   ¦   +---test
+¦   +---range-parser
+¦   +---raw-body
+¦   +---readable-stream
+¦   ¦   +---doc
+¦   ¦   ¦   +---wg-meetings
+¦   ¦   +---lib
+¦   ¦   ¦   +---internal
+¦   ¦   ¦       +---streams
+¦   ¦   +---node_modules
+¦   ¦       +---safe-buffer
+¦   +---regenerator-runtime
+¦   +---require-directory
+¦   +---rimraf
+¦   +---safe-buffer
+¦   +---safe-stable-stringify
+¦   ¦   +---esm
+¦   +---safer-buffer
+¦   +---seedrandom
+¦   ¦   +---.nyc_output
+¦   ¦   ¦   +---processinfo
+¦   ¦   +---coverage
+¦   ¦   ¦   +---lcov-report
+¦   ¦   ¦       +---seedrandom
+¦   ¦   ¦           +---lib
+¦   ¦   +---lib
+¦   +---semver
+¦   ¦   +---bin
+¦   ¦   +---classes
+¦   ¦   +---functions
+¦   ¦   +---internal
+¦   ¦   +---ranges
+¦   +---send
+¦   ¦   +---node_modules
+¦   ¦       +---ms
+¦   +---serve-static
+¦   +---set-blocking
+¦   +---set-function-length
+¦   ¦   +---.github
+¦   +---setprototypeof
+¦   ¦   +---test
+¦   +---side-channel
+¦   ¦   +---.github
+¦   ¦   +---test
+¦   +---sift
+¦   ¦   +---es
+¦   ¦   +---es5m
+¦   ¦   +---lib
+¦   ¦   +---src
+¦   +---signal-exit
+¦   +---simple-swizzle
+¦   +---sparse-bitfield
+¦   +---sprintf-js
+¦   ¦   +---demo
+¦   ¦   +---dist
+¦   ¦   +---src
+¦   ¦   +---test
+¦   +---stack-trace
+¦   ¦   +---lib
+¦   +---statuses
+¦   +---streamsearch
+¦   ¦   +---.github
+¦   ¦   ¦   +---workflows
+¦   ¦   +---lib
+¦   ¦   +---test
+¦   +---string-width
+¦   +---string_decoder
+¦   ¦   +---lib
+¦   ¦   +---node_modules
+¦   ¦       +---safe-buffer
+¦   +---strip-ansi
+¦   +---supports-color
+¦   +---tar
+¦   ¦   +---lib
+¦   ¦   +---node_modules
+¦   ¦       +---yallist
+¦   +---text-hex
+¦   +---toidentifier
+¦   +---tr46
+¦   ¦   +---lib
+¦   +---triple-beam
+¦   ¦   +---.nyc_output
+¦   ¦   ¦   +---processinfo
+¦   ¦   +---config
+¦   +---type-is
+¦   +---typedarray
+¦   ¦   +---example
+¦   ¦   +---test
+¦   ¦       +---server
+¦   +---undici-types
+¦   +---unpipe
+¦   +---util-deprecate
+¦   +---utils-merge
+¦   +---vary
+¦   +---webidl-conversions
+¦   ¦   +---lib
+¦   +---whatwg-url
+¦   ¦   +---lib
+¦   +---wide-align
+¦   +---winston
+¦   ¦   +---dist
+¦   ¦   ¦   +---winston
+¦   ¦   ¦       +---config
+¦   ¦   ¦       +---transports
+¦   ¦   +---lib
+¦   ¦   ¦   +---winston
+¦   ¦   ¦       +---config
+¦   ¦   ¦       +---transports
+¦   ¦   +---node_modules
+¦   ¦       +---readable-stream
+¦   ¦           +---lib
+¦   ¦               +---internal
+¦   ¦                   +---streams
+¦   +---winston-transport
+¦   ¦   +---.nyc_output
+¦   ¦   ¦   +---processinfo
+¦   ¦   +---dist
+¦   ¦   +---node_modules
+¦   ¦       +---readable-stream
+¦   ¦           +---lib
+¦   ¦               +---internal
+¦   ¦                   +---streams
+¦   +---wrap-ansi
+¦   +---wrappy
+¦   +---xtend
+¦   +---y18n
+¦   ¦   +---build
+¦   ¦       +---lib
+¦   ¦           +---platform-shims
+¦   +---yallist
+¦   +---yargs
+¦   ¦   +---build
+¦   ¦   ¦   +---lib
+¦   ¦   ¦       +---typings
+¦   ¦   ¦       +---utils
+¦   ¦   +---helpers
+¦   ¦   +---lib
+¦   ¦   ¦   +---platform-shims
+¦   ¦   +---locales
+¦   +---yargs-parser
+¦       +---build
+¦           +---lib
++---saved_model
++---uploads
